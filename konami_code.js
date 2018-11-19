@@ -14,7 +14,7 @@ const codes = [
 function init() {
   //your code here
   const body = document.getElementByTagName("body");
-  body.addEventListener('keydown', function(e) { 
+  body.addEventListener('keydown', function(e) {
     let i = 0;
     const key = e.key;
     if (key === codes[i]) {
@@ -24,9 +24,9 @@ function init() {
         alert("Konami!");
         i = 0;
       }
-    } 
+    }
     else {
-      i = 0;
+      i = 0; 
     }
   });
 
