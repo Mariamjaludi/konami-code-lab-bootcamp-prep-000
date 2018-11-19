@@ -13,19 +13,21 @@ const codes = [
 
 function init() {
   //your code here
-let i = 0;
-  function onKeyDownHandler(e) {
-      const key = e.key;
-      if (key === codes[i]) {
-        i++;
+  const body = document.getElementByTagName("body");
+  body.addEventListener('keydown', function(e) { 
+    let i = 0;
+    const key = e.key;
+    if (key === codes[i]) {
+      i++;
 
-        if (i === codes.length) {
-          alert("Konami!");
-          i = 0;
-        }
-      } else {
+      if (i === codes.length) {
+        alert("Konami!");
         i = 0;
       }
+    } 
+    else {
+      i = 0;
     }
+  });
 
 }
